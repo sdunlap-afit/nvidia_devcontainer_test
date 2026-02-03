@@ -1,6 +1,13 @@
 {
     "name": "NVIDIA GPU Test",
     "image": "nvidia/cuda:13.1.1-cudnn-devel-ubuntu24.04", 
+    "features": {
+        // This adds curl, wget, git, and other basics automatically
+        "ghcr.io/devcontainers/features/common-utils:2": {
+        "installZsh": false,
+        "upgradePackages": true
+        }
+    },
     "customizations": {
         "vscode": {
             "extensions": [
