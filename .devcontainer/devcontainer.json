@@ -1,0 +1,13 @@
+{
+    "name": "NVIDIA GPU Test",
+    "image": "nvidia/cuda:13.1.1-cudnn-devel-ubuntu24.04", 
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-azuretools.vscode-docker",
+                "nvidia.nsight-vscode-edition"
+            ]
+        }
+    },
+    "remoteUser": "root"
+}
